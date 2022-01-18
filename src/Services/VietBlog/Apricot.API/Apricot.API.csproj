@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <ProjectReference Include="..\Apricot.Domain\Apricot.Domain.csproj" />
+    <ProjectReference Include="..\Apricot.Infrastructure\Apricot.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

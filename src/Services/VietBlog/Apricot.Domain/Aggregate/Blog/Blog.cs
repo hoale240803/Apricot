@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Apricot.Domain.Aggregate.Blog
 {
@@ -11,42 +10,38 @@ namespace Apricot.Domain.Aggregate.Blog
 
         public string Content { get; set; }
 
-        public string ClapCount { get; set; }   
+        public string ClapCount { get; set; }
 
+        private readonly List<Image<string, string>> _images = new List<Image<string, string>>();
 
-        private List<Image<string, string>> _images { get; set; }
-        public List<Image<string, string>> Images { get; set; }
+        public IEnumerable<Image<string, string>> Images => _images.AsReadOnly();
 
-
-        public void AddImage(Image<string,string> image)
+        public List<Image<string, string>> AddImages(List<Image<string, string>> images)
         {
             //validate image
 
+            _images.AddRange(images);
 
-            _images.Add(image);
-
+            return _images;
         }
 
         public void SaveAsDraft()
         {
             IsDraft = true;
-
         }
 
+        public void ClapToBlog()
+        {
+        }
 
         //TODO clap to blog
-
 
         //TODO follow
         //
 
-        //validate 
+        //validate
 
         //1. validate title
         //2. validate content
     }
-
-
-
-
 }
