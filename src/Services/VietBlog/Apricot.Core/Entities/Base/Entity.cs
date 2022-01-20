@@ -1,4 +1,4 @@
-﻿namespace Apricot.Core.Base
+﻿namespace Apricot.Core.Entities.Base
 {
     public abstract class Entity : EntityBase<int>
     {
