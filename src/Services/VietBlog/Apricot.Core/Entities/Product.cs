@@ -21,13 +21,17 @@ namespace Apricot.Core.Entities
         public int CategoryId { get; set; }
         public string ProductReason { get; set; }
 
+        public string BarCode { get; set; }
+
+        public string Description { get; set; }
+
         public Category Category { get; set; }
 
         public static Product create(int productId, string quantityPerUnity,
             bool discontinued, int categoryId, string productReason,
              string name, decimal? unitPrice = null,
            short? unitsInStock = null, short? unitsOnOrder = null,
-           short? ReorderLevel = null)
+           short? ReorderLevel = null, string barcode = null, string description = null)
         {
             var product = new Product
             {
@@ -40,6 +44,8 @@ namespace Apricot.Core.Entities
                 CategoryId = categoryId,
                 Discontinued = discontinued,
                 ReorderLevel = ReorderLevel,
+                BarCode = barcode,
+                Description = description
             };
             return product;
         }

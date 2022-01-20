@@ -1,6 +1,7 @@
-﻿using System.Linq.Expressions;
+﻿using Apricot.Core.Specification.Base;
+using System.Linq.Expressions;
 
-namespace Apricot.Core.Interfaces.Repositories.Base
+namespace Apricot.Core.Repositories.Base
 {
     public interface IRepository<T> where T : class
     {
