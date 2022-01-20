@@ -39,6 +39,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apricot.BackgroundTasks", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VietBlog", "VietBlog", "{265B583B-D5A2-472C-8382-F011DC712E01}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apricot.Core", "src\Services\VietBlog\Apricot.Core\Apricot.Core.csproj", "{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apricot.Application", "src\Services\VietBlog\Apricot.Application\Apricot.Application.csproj", "{AC3F648D-ECB8-4435-B549-7487DFF82318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,14 @@ Global
 		{774E5173-3A30-427D-9155-FB75267C3BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774E5173-3A30-427D-9155-FB75267C3BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774E5173-3A30-427D-9155-FB75267C3BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3F648D-ECB8-4435-B549-7487DFF82318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3F648D-ECB8-4435-B549-7487DFF82318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3F648D-ECB8-4435-B549-7487DFF82318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3F648D-ECB8-4435-B549-7487DFF82318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +93,8 @@ Global
 		{BB53E70E-BAB7-4603-8CF3-B32CE1F3A4C1} = {265B583B-D5A2-472C-8382-F011DC712E01}
 		{774E5173-3A30-427D-9155-FB75267C3BCB} = {265B583B-D5A2-472C-8382-F011DC712E01}
 		{265B583B-D5A2-472C-8382-F011DC712E01} = {60D56D5B-0CE8-45D6-A913-0FE52C1BD32F}
+		{3F056DA9-E482-4DB4-81BC-A45DF2D9F7D3} = {265B583B-D5A2-472C-8382-F011DC712E01}
+		{AC3F648D-ECB8-4435-B549-7487DFF82318} = {265B583B-D5A2-472C-8382-F011DC712E01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {491D2568-3CCD-44AD-98EA-F48277F50D0C}
